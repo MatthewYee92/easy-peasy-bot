@@ -83,10 +83,12 @@ controller.on('rtm_close', function (bot) {
 
 controller.on('bot_channel_join', function (bot, message) {
     bot.reply(message, "I'm here!")
+    console.log('Initiate slack bot');
 });
 
 controller.hears('hello', 'direct_message', function (bot, message) {
     bot.reply(message, 'Hello!');
+    console.log('SLACKBOT IS RESPONDING');
 });
 
 
