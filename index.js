@@ -8,6 +8,13 @@
  * With custom integrations, we don't have a way to find out who installed us, so we can't message them :(
  */
 
+/* 
+imported slackTestBot case for integration.
+*/
+
+import test_bot from './components/test_bot';
+
+
 function onInstallation(bot, installer) {
     if (installer) {
         bot.startPrivateConversation({user: installer}, function (err, convo) {
@@ -81,7 +88,12 @@ controller.on('rtm_close', function (bot) {
  */
 // BEGIN EDITING HERE!
 
-controller.on('bot_channel_join', function (bot, message) {
+// controller.on('bot_channel_join', function (bot, message) {
+//     bot.reply(message, "I'm here!")
+//     console.log('Initiate slack bot');
+// });
+
+bo.on('bot_channel_join', function (bot, message) {
     bot.reply(message, "I'm here!")
     console.log('Initiate slack bot');
 });

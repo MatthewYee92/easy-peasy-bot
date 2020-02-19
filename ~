@@ -1,0 +1,13 @@
+updated with a test slack bot case in optimal complexity.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Matthew Yee <matthew.yee@ibm.com@Matthews-MacBook-Pro.local>
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   components/test_bot.js
+#	modified:   index.js
+#

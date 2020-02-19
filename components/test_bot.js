@@ -20,7 +20,7 @@ const isLoggedIn = (slackHandle, password) => {
 
     // pass down the user slack handle
     if(user === slackHandle) return userCookie;
-    
+
     if(userCookie === null) return 'Non existing';  
 
     userData.forEach(e => {
@@ -55,3 +55,6 @@ const slackTest = (slackHandle, isLoggedIn) => {
 
 
 }
+
+
+module.exports = isLoggedIn, slackTest, globalState; 
